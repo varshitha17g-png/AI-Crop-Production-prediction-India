@@ -10,8 +10,7 @@ le_crop = joblib.load('le_crop.pkl')
 le_state = joblib.load('le_state.pkl')
 scaler = joblib.load('scaler.pkl')
 
-# Debugging: Available crops chupinchu
-st.write("Available Crops:", list(le_crop.classes_))
+
 
 crop = st.selectbox("Select Crop", le_crop.classes_)
 state = st.selectbox("Select State", le_state.classes_)
